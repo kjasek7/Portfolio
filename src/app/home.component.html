@@ -1,0 +1,31 @@
+<app-header></app-header>
+
+<section class="background_image">
+
+</section>
+
+<section class="blue_background">
+
+</section>
+
+<section class="skills">
+  <div class="container is_narrow">
+    <div class="box">
+      <div class="columns">
+        <div class="column">
+          <h1 class="text-centered">Front-end</h1>
+          <div *ngFor="let skill of frontendSkills">
+            <img [src]="skill.imageUrl" alt="skill"/>
+          </div>
+        </div>
+        <div class="column">
+          <h1 class="text-centered">Back-end</h1>
+        </div>
+        <div class="column">
+          <h1 class="text-centered">Narzędzia i inne</h1>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
