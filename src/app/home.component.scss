@@ -1,0 +1,57 @@
+
+.background_image {
+  background-image: url('../assets/img/background.jpg');
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+}
+
+.blue_background {
+  background-color: #7510F7;
+  height: 80vh;
+}
+
+.skills {
+  margin-top: -14rem;
+  padding: 5rem 1.5rem;
+}
+
+//@media screen and (min-width: 1024px) {
+//  .container {
+//    max-width: 960px;
+//  }
+//}
+
+.container {
+  max-width: 80vw;
+  margin: 0 auto;
+  position: relative;
+}
+
+.box {
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 5px 5px 0 rgba(233, 240, 243, 0.5), 0 0 0 1px #E6ECF8;
+}
+
+.columns {
+  display: flex;
+}
+
+.column {
+  flex-grow: 1;
+  border-right: 1px solid #E6ECF8;
+  padding: 1rem;
+  align-items: center;
+  justify-content: center
+}
+
+.box .columns .column:last-child {
+  border-right: none;
+}
+
+img.skill-icon {
+  height: 60px;
+  width: auto;
+}
