@@ -1,4 +1,3 @@
-
 .background_image {
   background-image: url('../assets/img/background.jpg');
   background-attachment: fixed;
@@ -9,7 +8,7 @@
 
 .blue_background {
   background-color: #7510F7;
-  height: 80vh;
+  height: 80vh; //TODO do usunięcia
 }
 
 .skills {
@@ -41,10 +40,13 @@
 
 .column {
   flex-grow: 1;
-  border-right: 1px solid #E6ECF8;
   padding: 1rem;
   align-items: center;
   justify-content: center
+}
+
+.box .columns .column {
+  border-right: 1px solid #E6ECF8;
 }
 
 .box .columns .column:last-child {
@@ -55,4 +57,8 @@ img.skill-icon {
   height: 60px;
   width: auto;
   margin: 5px;
+}
+
+.skill-name {
+  display: block;
 }
