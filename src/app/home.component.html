@@ -1,39 +1,54 @@
-<!--<app-header></app-header>-->
+<app-header></app-header>
 
-<section class="background_image">
-
+<section class="background-image">
+  <div class="container h-100">
+    <div class="row h-100 align-items-center">
+      <div class="col oldlace-color text-center">
+        <h3>„Dochodzenie do mistrzostwa wymaga dwóch elementów: wiedzy i pracy" - te słowa Roberta C. Martina
+          motywują mnie, aby swoją pracę wykonywać jeszcze lepiej, choć moja droga do mistrzostwa jest jeszcze
+          daleka.</h3>
+      </div>
+    </div>
+  </div>
 </section>
 
-<section class="blue_background">
-  <div class="container">
-    <div class="column text-centered">
-<!--      <h1>Cześć, nazywam sie Kamil Jasek i jestem Fullstack Developerem</h1>-->
+<section class="background-blue">
+  <div class="container max-height">
+    <div class="row h-100 align-items-center">
+      <div class="col oldlace-color text-center">
+        <h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec id dignissim justo. Cras finibus ligula ut sem
+          varius mollis. Vestibulum eleifend odio quis massa suscipit interdum. Cras ac tincidunt lorem. Maecenas mollis
+          metus ut nulla tristique, a maximus nunc finibus. Nulla semper auctor lorem eget imperdiet. Curabitur dapibus
+          ornare viverra. Integer ultrices elit et laoreet consequat. Vivamus ut venenatis nunc. Maecenas finibus felis
+          nec pharetra maximus. Ut fringilla, diam ac aliquam vulputate, erat sem porta nisl, a condimentum mi felis id
+          enimd. Aenean quis.</h4>
+      </div>
     </div>
   </div>
 </section>
 
 <section class="skills">
-  <div class="container is_narrow">
+  <div class="container">
     <div class="box">
       <div class="columns">
         <div class="column">
-          <h1 class="text-centered">Front-end</h1>
-          <div class="image text-centered" *ngFor="let skill of frontendSkills">
-            <img class="skill-icon" [src]="skill.imageUrl" alt="skill"/>
+          <h1 class="text-center">Front-end</h1>
+          <div *ngFor="let skill of frontendSkills" class="image text-center">
+            <img [src]="skill.imagePath" alt="skill" class="skill-icon"/>
             <span class="skill-name">{{skill.skillName}}</span>
           </div>
         </div>
         <div class="column">
-          <h1 class="text-centered">Back-end</h1>
-          <div class="image text-centered" *ngFor="let skill of frontendSkills">
-            <img class="skill-icon" [src]="skill.imageUrl" alt="skill"/>
+          <h1 class="text-center">Back-end</h1>
+          <div *ngFor="let skill of backendSkills" class="image text-center">
+            <img [src]="skill.imagePath" alt="skill" class="skill-icon"/>
             <span class="skill-name">{{skill.skillName}}</span>
           </div>
         </div>
         <div class="column">
-          <h1 class="text-centered">Narzędzia i inne</h1>
-          <div class="image text-centered" *ngFor="let skill of frontendSkills">
-            <img class="skill-icon" [src]="skill.imageUrl" alt="skill"/>
+          <h1 class="text-center">Narzędzia i inne</h1>
+          <div *ngFor="let skill of toolsSkills" class="image text-center">
+            <img [src]="skill.imagePath" alt="skill" class="skill-icon"/>
             <span class="skill-name">{{skill.skillName}}</span>
           </div>
         </div>
@@ -42,6 +57,6 @@
   </div>
 </section>
 
-<section class="blue_background">
-  <div class="container is_narrow"></div>
+<section class="background-blue">
+  <div class="container"></div>
 </section>
