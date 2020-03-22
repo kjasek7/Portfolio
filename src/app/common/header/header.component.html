@@ -1,6 +1,35 @@
-<nav class="fixed-top">
-  <div class="container py-3 mt-3 title">
-    <span class="title-name"><a [routerLink]="'/'">Kamil Jasek</a></span>
-    <p class="title-subtitle">Full Stack Developer</p>
+<nav class="fixed-top-nav container">
+  <div [hidden]="!showTitle" [@slideInOutAnimation]=currentState class="row">
+    <div class="col py-3 mt-3 title">
+      <span class="title-name"><a [routerLink]="'/'">Kamil Jasek</a></span>
+      <p class="title-subtitle">Full Stack Developer</p>
+    </div>
+
+    <div class="col py-3 mt-3 text-center social-media">
+      <div class="row justify-content-end">
+        <div *ngFor="let social of socialImages">
+          <a [href]="social.url" target="_blank">
+            <img [src]="social.imagePath" alt="social" class="social-icon"/>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container menu">
+    <ul class="row menu-list justify-content-center">
+      <li class="col-auto menu_item">
+        <a routerLink="/" fragment="home">Start</a>
+      </li>
+      <li class="col-auto menu_item">
+        <a routerLink="/" fragment="omnie">O mnie</a>
+      </li>
+      <li class="col-auto menu_item">
+        <a routerLink="/" fragment="skills">Umiejętności</a>
+      </li>
+      <li class="col-auto menu_item">
+        <a routerLink="/" fragment="projects">Projekty</a>
+      </li>
+    </ul>
   </div>
 </nav>

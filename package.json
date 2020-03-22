@@ -7,7 +7,8 @@
     "build": "ng build",
     "test": "ng test",
     "lint": "ng lint",
-    "e2e": "ng e2e"
+    "e2e": "ng e2e",
+    "public": "ng build --prod --base-href https://kjasek7.github.io/Portfolio/ && ngh --dir=dist/Portfolio"
   },
   "private": true,
   "dependencies": {
